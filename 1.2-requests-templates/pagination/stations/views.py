@@ -7,7 +7,9 @@ with open('data-398-2018-08-30.csv', newline='', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile)
     big_data = []
     for line in reader:
+        print(line)
         one_station = {'Name': line['Name'], 'Street': line['Street'], 'District': line['District']}
+
         big_data.append(one_station)
 
 
